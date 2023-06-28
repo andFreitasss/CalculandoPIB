@@ -26,10 +26,10 @@ int main(void) {
   for (i = 0; i < anos; i++)
     scanf("%f", &vet[i]);
 
-  for (i = 0; i < anos - 2;
-       i++) { // loop para verificar todos os anos - 2, pois um trienio é
-              // composto por 3 anos, ou seja, a as ultimas 2 comparações não
-              // seriam trienios
+  for (i = 0; i < anos - 2; i++){
+        // loop para verificar todos os anos - 2, pois um trienio é
+        // composto por 3 anos, ou seja, a as ultimas 2 comparações não
+        // seriam trienios
 
     aux = 0; // reset da variavel aux para cada loop
 
@@ -42,11 +42,11 @@ int main(void) {
     aux = (aux / 3) * 100; // transformando a somatória do triênio em uma media
                            // percentual de crescimento
 
-    if (aux > porcentagem ||
-        i ==
-            0) { // caso seja a primeira execução ou a media percentual do
-                 // triênio atual seja maior que a que estava armazanada, usamos
-                 // a variavel porcentagem para armazenar esse novo valor
+    if (aux > porcentagem || i -- 0){
+             // caso seja a primeira execução ou a media percentual do
+             // triênio atual seja maior que a que estava armazanada, usamos
+             // a variavel porcentagem para armazenar esse novo valor
+      
       porcentagem = aux;
       indice = i; //é armazenado também o indice de triênio, para a impressão no
                   //final do código
